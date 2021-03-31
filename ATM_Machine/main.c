@@ -1,8 +1,19 @@
+// /* ATM Machine service
+// Untuk memenuhi matkul algroritma pemrograman
+// |=========================================|
+// |---------- ATM Machine service ----------|
+// |---------- | Telkom University  |--------|
+// |------------| Author: Haidar |-----------|
+// |---------| Password: 123 |---------------|
+// |=========================================|*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 void main()
 {
+    int pilihNomor, saldo = 5000000;
+    int tagihanListrik = 200000;
+    int rekening, nominaltransfer;
 
     int pin, enter = 1, pwd = 123;
 login:
@@ -16,17 +27,14 @@ login:
             system("cls");
         }
     }
-
-    int inside = 1;
-    int pilihNomor, saldo = 5000000;
-
-    int tagihanListrik = 20000;
+   
     char tanyaListrik;
 
     char tanyaPin;
-
-    int rekening, nominaltransfer;
+   
     char tanyabayar;
+
+    int inside = 1;
 
     while (inside)
     {
